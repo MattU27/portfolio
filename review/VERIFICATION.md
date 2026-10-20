@@ -1,3 +1,9 @@
+# Publishing update - 21 October 2026
+
+Removed all censoring at the user's request after confirmation that the recording contains dummy data. Complete final video decoded without errors. Local lint, TypeScript and GitHub Pages export passed. GitHub Actions independently passed dependency installation, lint, TypeScript and the static export. The deployment is published at https://mattu27.github.io/portfolio/ from https://github.com/MattU27/portfolio.
+
+The asset prefix is applied to the portrait, video, preview, chapters and resume, while local development retains root URLs. See pages-acceptance.json for independent browser acceptance results. Earlier entries below record prior revisions, including the now-superseded censored edit.
+
 # Local verification — 20 October 2026
 
 Tested the production build served at http://127.0.0.1:3000 in Chromium 155.

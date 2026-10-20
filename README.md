@@ -4,6 +4,8 @@ Portfolio for John Matthew Banto, a Manila-based full-stack developer. Built wit
 
 The walkthrough demonstrates E-Bidding and Shipment Tracking with fictional test data. The user confirmed all displayed details are dummy data and requested the uncensored recording. The original recording remains unchanged; the served copy is compressed to 1280 x 720. It loads on demand and has native playback controls.
 
+Live website: https://mattu27.github.io/portfolio/
+
 ## Local development
 
 Requires Node.js 20.9+ and npm.

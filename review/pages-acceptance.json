@@ -1,0 +1,53 @@
+{
+  "url": "https://mattu27.github.io/portfolio/",
+  "results": [
+    {
+      "width": 1440,
+      "assets": [
+        "/portfolio/images/matt-banto-portrait.png",
+        "/portfolio/media/walkthrough-poster.jpg"
+      ],
+      "href": "/portfolio/resume/John_Matthew_Banto_Developer_Resume.pdf",
+      "info": {
+        "duration": 298,
+        "width": 1280,
+        "height": 720,
+        "src": "https://mattu27.github.io/portfolio/media/full-walkthrough.mp4"
+      },
+      "seeks": [
+        90,
+        280,
+        297
+      ],
+      "noOverflow": true,
+      "keyboardOpen": true,
+      "pauseOnClose": true,
+      "noPrivacyText": true
+    },
+    {
+      "width": 360,
+      "assets": [
+        "/portfolio/images/matt-banto-portrait.png",
+        "/portfolio/media/walkthrough-poster.jpg"
+      ],
+      "href": "/portfolio/resume/John_Matthew_Banto_Developer_Resume.pdf",
+      "info": {
+        "duration": 298,
+        "width": 1280,
+        "height": 720,
+        "src": "https://mattu27.github.io/portfolio/media/full-walkthrough.mp4"
+      },
+      "seeks": [
+        90,
+        280,
+        297
+      ],
+      "noOverflow": true,
+      "keyboardOpen": true,
+      "pauseOnClose": true,
+      "noPrivacyText": true
+    }
+  ],
+  "errors": [],
+  "bad": []
+}
