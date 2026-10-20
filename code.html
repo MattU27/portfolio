@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#a5d0b9", "on-secondary-fixed-variant": "#0e5138", "on-primary-fixed-variant": "#274e3d", "tertiary-container": "#563400", "secondary-container": "#aeeecb", "on-surface": "#1b1c1e", "surface-container-high": "#e9e8ea", "secondary-fixed": "#b1f0ce", "primary-container": "#1b4332", "surface-variant": "#e3e2e4", "surface-container-highest": "#e3e2e4", "on-secondary": "#ffffff", "surface-container-low": "#f5f3f5", "primary": "#012d1d", "primary-fixed": "#c1ecd4", "surface-bright": "#faf9fb", "surface-container-lowest": "#ffffff", "surface-container": "#efedf0", "secondary-fixed-dim": "#95d4b3", "outline-variant": "#c1c8c2", "on-surface-variant": "#414844", "on-secondary-fixed": "#002114", "surface": "#faf9fb", "on-tertiary-fixed-variant": "#653e00", "primary-fixed-dim": "#a5d0b9", "surface-dim": "#dbd9dc", "inverse-surface": "#2f3032", "on-error-container": "#93000a", "on-error": "#ffffff", "tertiary-fixed": "#ffddb7", "error-container": "#ffdad6", "secondary": "#2c694e", "background": "#faf9fb", "outline": "#717973", "tertiary-fixed-dim": "#fabb6a", "surface-tint": "#3f6653", "inverse-on-surface": "#f2f0f3", "on-tertiary-container": "#d59a4e", "on-primary": "#ffffff", "tertiary": "#382100", "error": "#ba1a1a", "on-secondary-container": "#316e52", "on-primary-fixed": "#002114", "on-primary-container": "#86af99", "on-tertiary-fixed": "#2a1700", "on-tertiary": "#ffffff", "on-background": "#1b1c1e" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "space-2xl": "4rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "margin-desktop": "4rem", "space-3xl": "6rem", "space-md": "1rem", "margin": "1.25rem", "space-xl": "2.5rem", "gutter-desktop": "2.5rem" }, "fontFamily": { "label-code": [ "JetBrains Mono" ], "headline-lg": [ "Newsreader" ], "body-md": [ "Inter" ], "headline-sm": [ "Inter" ], "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "headline-md": [ "Newsreader" ], "display-hero": [ "Newsreader" ], "display-hero-mobile": [ "Newsreader" ], "label-meta": [ "JetBrains Mono" ], "headline-lg-mobile": [ "Newsreader" ] }, "fontSize": { "label-code": [ "0.8125rem", { "lineHeight": "1.125rem", "letterSpacing": "0.02em", "fontWeight": "500" } ], "headline-lg": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "body-md": [ "0.9375rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "headline-sm": [ "1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "body-sm": [ "0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" } ], "body-lg": [ "1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" } ], "headline-md": [ "1.5rem", { "lineHeight": "2rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "display-hero": [ "3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.025em", "fontWeight": "400" } ], "display-hero-mobile": [ "2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "label-meta": [ "0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.05em", "fontWeight": "500" } ], "headline-lg-mobile": [ "1.75rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md border-b border-outline-variant/40"><div class="h-20 max-w-[1120px] mx-auto px-margin md:px-gutter-desktop flex items-center justify-between"><a class="group flex flex-col focus:outline-none" data-path="work" href="#"><span class="font-headline-md text-headline-md text-on-surface tracking-tight group-hover:text-primary transition-colors">Matt Banto</span><span class="font-label-meta text-label-meta uppercase tracking-wider text-on-surface-variant">Full-Stack Developer</span></a><div class="flex items-center gap-space-lg"><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-semibold rounded-lg" data-path="work" href="#">Work</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="experience" href="#">Experience</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm pl-space-sm md:border-l md:border-outline-variant/50"><a class="inline-flex items-center gap-1.5 px-space-md py-2 bg-primary text-on-primary font-body-sm text-body-sm font-semibold rounded-lg border border-primary hover:bg-secondary transition-colors shadow-sm focus:outline-none focus:ring-1 focus:ring-primary" href="#resume"><span class="material-symbols-outlined text-[16px]">download</span><span>Resume</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top subtle notification / Availability anchor -->
+<section class="max-w-[1120px] w-full mx-auto px-margin md:px-gutter-desktop pt-space-lg pb-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm py-space-xs px-space-md bg-surface-container rounded-lg border border-outline-variant/50">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-meta text-label-meta text-on-surface uppercase tracking-wider font-semibold">Available for Fully Remote Roles</span>
+</div>
+<div class="font-label-code text-label-code text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-outline">public</span>
+<span>Based in the Philippines · Flexible across APAC, EMEA &amp; US Overlap</span>
+</div>
+</div>
+</section>
+<!-- Hero Section -->
+<section class="max-w-[1120px] w-full mx-auto px-margin md:px-gutter-desktop pt-space-xl pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-7 flex flex-col space-y-space-md">
+<div class="space-y-1">
+<span class="font-label-meta text-label-meta uppercase tracking-widest text-secondary font-semibold">Engineering Profile</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">John Matthew Banto</h1>
+<p class="font-label-code text-label-code text-on-surface-variant font-medium">Full-Stack Developer · Backend Focus</p>
+</div>
+<p class="font-headline-md text-headline-md text-on-surface leading-snug pt-space-xs">
+          I build business systems that turn complex workflows into usable software.
+        </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          I work with React, Next.js, TypeScript and PostgreSQL-backed applications, from requirements and implementation to testing, deployment and maintenance.
+        </p>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-sm">
+<a class="inline-flex items-center gap-2 px-space-lg py-2.5 bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold rounded-lg hover:bg-secondary transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" href="#work">
+<span>View My Work</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-2 px-space-lg py-2.5 bg-surface text-on-surface font-body-sm text-body-sm font-semibold rounded-lg border border-outline-variant hover:border-primary-container hover:bg-surface-container transition-all focus:outline-none focus:ring-2 focus:ring-primary" href="#contact">
+<span>Contact Me</span>
+<span class="material-symbols-outlined text-[16px]">mail</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-space-md py-2.5 font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:underline underline-offset-4 transition-colors" href="/assets/resume-john-matthew-banto.pdf" target="_blank">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>Download Résumé (PDF)</span>
+</a>
+</div>
+</div>
+<!-- Hero Visual: Conceptual Architecture Figure -->
+<div class="lg:col-span-5 flex flex-col space-y-2">
+<div class="bg-surface-container-low rounded-xl p-space-sm border border-outline-variant/60 shadow-sm relative group overflow-hidden">
+<div class="overflow-hidden rounded-lg bg-surface">
+<img alt="Conceptual Architecture Workflow Diagram illustrating client presentation, logic tier state machine, and relational database validation layers" class="w-full h-auto object-cover border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida/AEtjO1VWFHd0cwe71ThaWQAumkTSPtRmnjAZ2x6HuDlcQJdJDRwTkDGlAaaWH6pvSZIPZfe71eHTTQNSemgajAHuQdq-n8Jwl1kDIwjVwmkKK5WrNqwB0knT275VJum4VWcTxiQST8vpCEBHxbJ8TrG2BDR-qk77Z7GwTkJzzaOb23aSq94Fb6P-2NlKfPUKK3QKCCZtd3uFM0Uz213FMtKDoLr3X32ueV2xdJMH45B2iXVrynCG7ur6UPtZ8raA"/>
+</div>
+<div class="pt-space-xs px-1 flex flex-col space-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-[11px] text-primary font-semibold tracking-wider uppercase">FIG 01. RECEPTIVE ARCHITECTURE</span>
+<span class="font-label-meta text-[10px] text-outline font-medium">CONCEPTUAL WORKFLOW</span>
+</div>
+<p class="font-label-meta text-[11px] text-on-surface-variant leading-tight">
+              Abstract workflow illustration · Conceptual demonstration · Not actual production architecture
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Subtle Divider Metric Strip -->
+<section class="max-w-[1120px] w-full mx-auto px-margin md:px-gutter-desktop py-space-md border-y border-outline-variant/40">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="space-y-0.5">
+<span class="font-label-meta text-label-meta text-outline uppercase">Core Paradigm</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">Data-First Logic</p>
+<span class="font-label-code text-label-code text-on-surface-variant">Relational schemas &amp; RLS</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-meta text-label-meta text-outline uppercase">Delivery Scope</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">End-to-End</p>
+<span class="font-label-code text-label-code text-on-surface-variant">Scoping → QA → Maintenance</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-meta text-label-meta text-outline uppercase">Target Domain</span>
+<p class="font-headline-sm text-headline-sm text-on-surface">Business Operations</p>
+<span class="font-label-code text-label-code text-on-surface-variant">Audit trails &amp; State machines</span>
+</div>
+<div class="space-y-0.5">
+<span class="font-label-meta text-label-meta text-outline uppercase">Availability</span>
+<p class="font-headline-sm text-headline-sm text-secondary">Immediate Remote</p>
+<span class="font-label-code text-label-code text-on-surface-variant">Synchronous APAC/EMEA/US</span>
+</div>
+</div>
+</section>
+<!-- SELECTED WORK SECTION -->
+<section class="max-w-[1120px] w-full mx-auto px-margin md:px-gutter-desktop pt-space-2xl pb-space-3xl scroll-mt-24" id="work">
+<div class="flex flex-col space-y-space-xs pb-space-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<h2 class="font-label-meta text-label-meta uppercase tracking-widest text-on-surface font-semibold">Featured Work · Proprietary Systems</h2>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface">Selected Business Applications</p>
+<div class="p-space-sm bg-surface-container rounded-lg border-l-2 border-primary-container text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Operational Privacy Notice:</span> Both systems highlighted below are internal, proprietary business tools designed for authenticated internal operations. To respect organization privacy, client identities and live production URLs are withheld.
+      </div>
+</div>
+<!-- PROJECT A CARD -->
+<div class="bg-surface rounded-xl border border-outline-variant/60 shadow-sm p-space-lg md:p-space-xl mb-space-2xl space-y-space-lg">
+<!-- Header & Metadata -->
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md border-b border-outline-variant/40 pb-space-md">
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-[11px] text-on-surface border border-outline-variant/50">Internal Business System</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/10 font-label-code text-[11px] text-primary-container font-medium border border-primary-container/30">Sole Full-Stack Developer</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface pt-1">Internal E-Bidding System</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Business Application for End-to-End Procurement, Multi-Tier Approvals &amp; Supplier Evaluation</p>
+</div>
+<div class="flex flex-wrap md:flex-col md:items-end gap-1 font-label-code text-label-code text-on-surface-variant shrink-0">
+<span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Production Internal Use</span>
+<span class="text-outline">Role: Sole Architect &amp; Developer</span>
+</div>
+</div>
+<!-- Scope Overview -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-7 space-y-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Executive Summary</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            A centralized business application engineered to digitize manual procurement workflows, formal bidding cycles, committee review gates, and automated post-award audit logging.
+          </p>
+<div class="p-space-sm bg-surface-container-low rounded-lg border border-outline-variant/40 space-y-1">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-primary font-semibold">Sole Contribution Scope</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Sole full-stack developer: Led technical requirements gathering, relational data modeling, interface design &amp; implementation, pre-production QA testing, deployment coordination, and maintenance.
+            </p>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-between bg-surface-container rounded-lg p-space-md border border-outline-variant/50 space-y-space-sm">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-on-surface-variant font-semibold">Technology Stack</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">Next.js</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">TypeScript</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">PostgreSQL</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">Supabase</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">Tailwind CSS</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">Row Level Security</span>
+</div>
+<div class="pt-2 border-t border-outline-variant/50 text-[11px] font-label-code text-on-surface-variant">
+            Data Architecture · ACID Guarantees · Audit Trails
+          </div>
+</div>
+</div>
+<!-- Visual Placeholder Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant p-space-md flex flex-col justify-between min-h-[180px]">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+<span class="font-label-meta text-label-meta text-outline uppercase font-semibold">Tender Administration</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+</div>
+<div class="py-space-md flex flex-col items-center justify-center text-center space-y-2 bg-surface-container-low rounded border border-dashed border-outline-variant/80 p-space-sm">
+<span class="material-symbols-outlined text-outline text-[28px]">dashboard</span>
+<span class="font-label-code text-label-code text-on-surface font-medium">[APPROVED SCREENSHOT PLACEHOLDER: Bidding Dashboard &amp; Tender Submission View]</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant max-w-xs">Interface displaying real-time vendor proposal intake, automated compliance threshold markers, and live deadline counters.</p>
+</div>
+<span class="font-label-meta text-[11px] text-outline text-right">Figure 1.1 · Procurement Console</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant p-space-md flex flex-col justify-between min-h-[180px]">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+<span class="font-label-meta text-label-meta text-outline uppercase font-semibold">Approval Engine</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container">account_tree</span>
+</div>
+<div class="py-space-md flex flex-col items-center justify-center text-center space-y-2 bg-surface-container-low rounded border border-dashed border-outline-variant/80 p-space-sm">
+<span class="material-symbols-outlined text-outline text-[28px]">rule</span>
+<span class="font-label-code text-label-code text-on-surface font-medium">[APPROVED SCREENSHOT PLACEHOLDER: Multi-Level Approval State Machine Matrix]</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant max-w-xs">Four-tier hierarchical authorization step flow verifying fiscal ceilings, signatory authentication, and immutable audit logs.</p>
+</div>
+<span class="font-label-meta text-[11px] text-outline text-right">Figure 1.2 · Sign-off Matrix</span>
+</div>
+</div>
+<!-- Interactive Tabbed Deep Dive -->
+<div class="bg-surface-container-low rounded-lg border border-outline-variant/60 overflow-hidden" id="projectA-tabs">
+<div class="flex flex-wrap border-b border-outline-variant/60 bg-surface-container">
+<button class="px-space-md py-2.5 font-label-code text-label-code font-semibold border-b-2 border-primary-container text-on-surface bg-surface-container-low transition-colors" id="projectA-btn-context" onclick="switchTab('projectA', 'context')">
+            01. Operational Context
+          </button>
+<button class="px-space-md py-2.5 font-label-code text-label-code font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" id="projectA-btn-workflows" onclick="switchTab('projectA', 'workflows')">
+            02. Core Workflows
+          </button>
+<button class="px-space-md py-2.5 font-label-code text-label-code font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" id="projectA-btn-decisions" onclick="switchTab('projectA', 'decisions')">
+            03. Technical Architecture
+          </button>
+<button class="px-space-md py-2.5 font-label-code text-label-code font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" id="projectA-btn-lessons" onclick="switchTab('projectA', 'lessons')">
+            04. Practical Takeaways
+          </button>
+</div>
+<div class="p-space-lg">
+<div class="space-y-space-sm block" id="projectA-panel-context">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Problem &amp; Scope</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Eliminating Paper &amp; Disjointed Spreadsheet Tenders</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Procurement submissions historically suffered severe operational drag: manual document intake, vulnerability to missing vendor compliance certificates, and protracted manual verification across executive desks. My responsibility was delivering an internal system that formalized the rules into a dependable digital state machine.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-2">
+<div class="bg-surface p-space-sm rounded border border-outline-variant/40">
+<span class="font-label-code text-label-code text-on-surface font-semibold block">Relational Integrity</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">PostgreSQL foreign keys ensure no orphan supplier documents exist.</span>
+</div>
+<div class="bg-surface p-space-sm rounded border border-outline-variant/40">
+<span class="font-label-code text-label-code text-on-surface font-semibold block">Granular RLS</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Strict Supabase Row Level Security prevents cross-bidder leakage.</span>
+</div>
+<div class="bg-surface p-space-sm rounded border border-outline-variant/40">
+<span class="font-label-code text-label-code text-on-surface font-semibold block">Zero Data Loss</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Transactional commits with complete audit history for every vote.</span>
+</div>
+</div>
+</div>
+<div class="space-y-space-sm hidden" id="projectA-panel-workflows">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Workflow Logic</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">End-to-End Bidding Sequence</h5>
+<ol class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="font-label-code text-label-code font-bold text-primary shrink-0 pt-0.5">01.</span>
+<div><strong class="text-on-surface">Vendor Proposal Submission:</strong> Suppliers upload notarized envelopes and quote sheets validated against pre-set schema rules before database insertion.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-label-code text-label-code font-bold text-primary shrink-0 pt-0.5">02.</span>
+<div><strong class="text-on-surface">Automated Compliance Gate:</strong> System checks statutory certificates, expiry timelines, and bonding credentials automatically. Non-compliant bids fail closed.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-label-code text-label-code font-bold text-primary shrink-0 pt-0.5">03.</span>
+<div><strong class="text-on-surface">Multi-Tier Approval Matrix:</strong> Parallel or sequential department evaluations based on tender budget tier, requiring multi-signature approval.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-label-code text-label-code font-bold text-primary shrink-0 pt-0.5">04.</span>
+<div><strong class="text-on-surface">Audit Trail &amp; Post-Award:</strong> Irreversible logging captures timestamps, reviewer IP hashes, and outcome notifications for institutional transparency.</div>
+</li>
+</ol>
+</div>
+<div class="space-y-space-sm hidden" id="projectA-panel-decisions">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Engineering Rationale</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Database Integrity Over Flexible Schemas</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              For fiscal procurement, document databases represent undue operational risk. I selected PostgreSQL hosted on Supabase to leverage native ACID transactions, strict foreign keys, and performant Row Level Security (RLS) policies. On the application layer, TypeScript type guards evaluate server action payloads prior to any transactional write, rejecting non-conforming bidding envelopes at the perimeter.
+            </p>
+</div>
+<div class="space-y-space-sm hidden" id="projectA-panel-lessons">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Operational Retrospective</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Clarity Over Cleverness for Enterprise Users</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Enterprise administrative teams prioritize explicit confirmation over hidden automations. Introducing clear visual feedback states for asynchronous multi-part uploads reduced support queries drastically. Additionally, investing time in third normal form (3NF) relational schema modeling early prevented messy data migrations when committee requirements evolved mid-cycle.
+            </p>
+</div>
+</div>
+</div>
+<!-- Video Demo Container -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/60 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[20px]">play_circle</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Watch Project Demo (Walkthrough)</span>
+<p class="font-label-code text-label-code text-on-surface-variant">[EDITING PLACEHOLDER: Video Demo URL /assets/demo-ebidding.mp4 - To be supplied upon clearance]</p>
+</div>
+</div>
+<span class="px-2.5 py-1 bg-surface rounded font-label-meta text-label-meta text-outline uppercase border border-outline-variant/60">Restricted Preview</span>
+</div>
+</div>
+<!-- PROJECT B CARD -->
+<div class="bg-surface rounded-xl border border-outline-variant/60 shadow-sm p-space-lg md:p-space-xl space-y-space-lg">
+<!-- Header & Metadata -->
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md border-b border-outline-variant/40 pb-space-md">
+<div class="space-y-1">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-[11px] text-on-surface border border-outline-variant/50">Internal Operations Platform</span>
+<span class="px-2 py-0.5 rounded bg-primary-container/10 font-label-code text-[11px] text-primary-container font-medium border border-primary-container/30">Sole Full-Stack Developer</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface pt-1">Shipment Tracking System</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Internal Operations Platform with Proof-of-Delivery, Role-Based Access &amp; Issue Auditing</p>
+</div>
+<div class="flex flex-wrap md:flex-col md:items-end gap-1 font-label-code text-label-code text-on-surface-variant shrink-0">
+<span class="inline-flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Production Field Operation</span>
+<span class="text-outline">Role: Architecture &amp; Maintenance</span>
+</div>
+</div>
+<!-- Scope Overview -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-7 space-y-space-sm">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Executive Summary</h4>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            An internal logistics and dispatch monitoring application built to provide real-time shipment status, proof-of-delivery (POD) document captures, and accountable chain-of-custody tracking.
+          </p>
+<div class="p-space-sm bg-surface-container-low rounded-lg border border-outline-variant/40 space-y-1">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-primary font-semibold">Sole Contribution Scope</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Sole full-stack development, database architecture, testing, production deployment, and rapid maintenance cycles triaged directly from user feedback logged in collaborative spreadsheets.
+            </p>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-between bg-surface-container rounded-lg p-space-md border border-outline-variant/50 space-y-space-sm">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-on-surface-variant font-semibold">Technology Stack</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">React</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">TypeScript</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">PostgreSQL</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">Tailwind CSS</span>
+<span class="px-2 py-1 rounded bg-surface font-label-code text-label-code text-on-surface border border-outline-variant/60">Spreadsheet Feedback Loop</span>
+</div>
+<div class="pt-2 border-t border-outline-variant/50 text-[11px] font-label-code text-on-surface-variant">
+            Indexed Queries · Optimistic Updates · RBAC
+          </div>
+</div>
+</div>
+<!-- Visual Placeholder Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant p-space-md flex flex-col justify-between min-h-[180px]">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+<span class="font-label-meta text-label-meta text-outline uppercase font-semibold">Dispatch Operations</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">local_shipping</span>
+</div>
+<div class="py-space-md flex flex-col items-center justify-center text-center space-y-2 bg-surface-container-low rounded border border-dashed border-outline-variant/80 p-space-sm">
+<span class="material-symbols-outlined text-outline text-[28px]">view_list</span>
+<span class="font-label-code text-label-code text-on-surface font-medium">[APPROVED SCREENSHOT PLACEHOLDER: Active Shipments Queue &amp; Status Filter View]</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant max-w-xs">High-density operational table with real-time waypoint indicators, driver assignments, and multi-parameter filtering.</p>
+</div>
+<span class="font-label-meta text-[11px] text-outline text-right">Figure 2.1 · Active Consignments</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant p-space-md flex flex-col justify-between min-h-[180px]">
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/30">
+<span class="font-label-meta text-label-meta text-outline uppercase font-semibold">Chain of Custody</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container">fact_check</span>
+</div>
+<div class="py-space-md flex flex-col items-center justify-center text-center space-y-2 bg-surface-container-low rounded border border-dashed border-outline-variant/80 p-space-sm">
+<span class="material-symbols-outlined text-outline text-[28px]">assignment_turned_in</span>
+<span class="font-label-code text-label-code text-on-surface font-medium">[APPROVED SCREENSHOT PLACEHOLDER: Proof-of-Delivery Audit &amp; Discrepancy Log]</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant max-w-xs">Detailed audit modal with signed receipt image attachment, geocoded confirmation, and exception comment history.</p>
+</div>
+<span class="font-label-meta text-[11px] text-outline text-right">Figure 2.2 · Verification Audit</span>
+</div>
+</div>
+<!-- Interactive Tabbed Deep Dive -->
+<div class="bg-surface-container-low rounded-lg border border-outline-variant/60 overflow-hidden" id="projectB-tabs">
+<div class="flex flex-wrap border-b border-outline-variant/60 bg-surface-container">
+<button class="px-space-md py-2.5 font-label-code text-label-code font-semibold border-b-2 border-primary-container text-on-surface bg-surface-container-low transition-colors" id="projectB-btn-context" onclick="switchTab('projectB', 'context')">
+            01. Operational Context
+          </button>
+<button class="px-space-md py-2.5 font-label-code text-label-code font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" id="projectB-btn-workflows" onclick="switchTab('projectB', 'workflows')">
+            02. Key Workflows
+          </button>
+<button class="px-space-md py-2.5 font-label-code text-label-code font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" id="projectB-btn-decisions" onclick="switchTab('projectB', 'decisions')">
+            03. Technical Architecture
+          </button>
+<button class="px-space-md py-2.5 font-label-code text-label-code font-medium text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" id="projectB-btn-lessons" onclick="switchTab('projectB', 'lessons')">
+            04. User Feedback Loops
+          </button>
+</div>
+<div class="p-space-lg">
+<div class="space-y-space-sm block" id="projectB-panel-context">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Problem &amp; Environment</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Replacing Fragmented Logistics Dispatch</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Logistics coordinators had to reconcile disparate telephone confirmations, handwritten delivery receipts, and disconnected tracking sheets. The goal was to establish an authoritative source of truth for consignment status, driver handoffs, and customer drop-offs with verifiable Proof-of-Delivery (POD).
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-2">
+<div class="bg-surface p-space-sm rounded border border-outline-variant/40">
+<span class="font-label-code text-label-code text-on-surface font-semibold block">Indexed Lookups</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">PostgreSQL B-Tree indexes on tracking numbers ensure instant lookup.</span>
+</div>
+<div class="bg-surface p-space-sm rounded border border-outline-variant/40">
+<span class="font-label-code text-label-code text-on-surface font-semibold block">Three-Role Security</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Isolated permissions for Field Drivers, Coordinators, and Management.</span>
+</div>
+<div class="bg-surface p-space-sm rounded border border-outline-variant/40">
+<span class="font-label-code text-label-code text-on-surface font-semibold block">Optimistic Cache</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Smooth UI transitions with rollback resilience for spotty cellular connections.</span>
+</div>
+</div>
+</div>
+<div class="space-y-space-sm hidden" id="projectB-panel-workflows">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Operational Pipeline</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">From Manifest Creation to Final Drop-off</h5>
+<ol class="space-y-3 font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="font-label-code text-label-code font-bold text-primary shrink-0 pt-0.5">01.</span>
+<div><strong class="text-on-surface">Consignment Creation:</strong> Dispatchers generate tracked parcels with origin, recipient metadata, and custom handling directives.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-label-code text-label-code font-bold text-primary shrink-0 pt-0.5">02.</span>
+<div><strong class="text-on-surface">Dispatch Assignment:</strong> Consignments are batched to vehicles or couriers with automated load and weight validation.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-label-code text-label-code font-bold text-primary shrink-0 pt-0.5">03.</span>
+<div><strong class="text-on-surface">In-Transit Checkpoints:</strong> Sequential milestone logging keeps both internal teams and recipient inquiries updated.</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="font-label-code text-label-code font-bold text-primary shrink-0 pt-0.5">04.</span>
+<div><strong class="text-on-surface">Proof-of-Delivery Verification:</strong> Drivers upload recipient signatures and photo receipts, immutably timestamped in the PostgreSQL record.</div>
+</li>
+</ol>
+</div>
+<div class="space-y-space-sm hidden" id="projectB-panel-decisions">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Technical Architecture</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Resilient State Under Intermittent Conditions</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Mobile users in logistics environments often face inconsistent mobile broadband. I implemented optimistic UI updates in React backed by local rollback safeguards. PostgreSQL compound indexes were placed on status and date ranges to ensure high-volume historical queries execute in under 35 milliseconds.
+            </p>
+</div>
+<div class="space-y-space-sm hidden" id="projectB-panel-lessons">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Iterative Methodology</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Direct Spreadsheet Feedback Triage</h5>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Rather than forcing non-technical logistics staff into complex bug trackers, I established a collaborative Google Sheet where operators flagged discrepancies and usability hurdles in real-time. This pragmatic triage rhythm allowed me to push targeted fixes and UX micro-optimizations within 24-hour cycles during the critical system launch phase.
+            </p>
+</div>
+</div>
+</div>
+<!-- Video Demo Container -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/60 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[20px]">play_circle</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Watch Project Demo (Walkthrough)</span>
+<p class="font-label-code text-label-code text-on-surface-variant">[EDITING PLACEHOLDER: Video Demo URL /assets/demo-shipment-tracking.mp4 - To be supplied upon clearance]</p>
+</div>
+</div>
+<span class="px-2.5 py-1 bg-surface rounded font-label-meta text-label-meta text-outline uppercase border border-outline-variant/60">Restricted Preview</span>
+</div>
+</div>
+</section>
+<!-- TECHNICAL SKILLS SECTION -->
+<section class="max-w-[1120px] w-full mx-auto px-margin md:px-gutter-desktop py-space-2xl border-t border-outline-variant/40 scroll-mt-24" id="skills">
+<div class="flex flex-col space-y-space-xs pb-space-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<h2 class="font-label-meta text-label-meta uppercase tracking-widest text-on-surface font-semibold">Competencies · No Arbitrary Percentage Bars</h2>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface">Technical Skills &amp; Philosophy</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        I refrain from arbitrary percentage bars or subjective “99% mastery” claims. The following tools represent practical production and project proficiencies evaluated by real-world system implementation.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Frontend -->
+<div class="bg-surface rounded-xl p-space-md border border-outline-variant/60 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">web</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Frontend</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Component encapsulation, typed props, strict client/server boundaries, and clean UI responsiveness.
+          </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-outline-variant/40">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Next.js</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Tailwind CSS</span>
+</div>
+<p class="font-label-meta text-[11px] text-outline">Production primary toolkit</p>
+</div>
+</div>
+<!-- Backend & Data -->
+<div class="bg-surface rounded-xl p-space-md border border-outline-variant/60 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">database</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Backend &amp; Data</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            ACID compliance, third normal form data models, Row Level Security, indexing, and atomic write operations.
+          </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-outline-variant/40">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">PostgreSQL</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Supabase</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Relational Modeling</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Row Level Security</span>
+</div>
+<p class="font-label-meta text-[11px] text-outline">Core architectural anchor</p>
+</div>
+</div>
+<!-- Additional Experience -->
+<div class="bg-surface rounded-xl p-space-md border border-outline-variant/60 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface text-[20px]">devices</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Project Scope</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Cross-platform mobile applications, reactive real-time state, and serverless document backends.
+          </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-outline-variant/40">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Flutter</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Dart</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Firebase</span>
+</div>
+<p class="font-label-meta text-[11px] text-outline">Academic &amp; mobile ventures</p>
+</div>
+</div>
+<!-- Workflow & Tooling -->
+<div class="bg-surface rounded-xl p-space-md border border-outline-variant/60 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface text-[20px]">terminal</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tooling &amp; QA</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Disciplined version control, rigorous exploratory testing, structured bug tracking, and end-to-end verification.
+          </p>
+</div>
+<div class="space-y-2 pt-2 border-t border-outline-variant/40">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Git</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Manual QA</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Deployment/Maint.</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-label-code text-on-surface border border-outline-variant/60">Playwright (Basic)</span>
+</div>
+<p class="font-label-meta text-[11px] text-outline">Reliability &amp; verification</p>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE & EDUCATION SECTION -->
+<section class="max-w-[1120px] w-full mx-auto px-margin md:px-gutter-desktop py-space-2xl border-t border-outline-variant/40 scroll-mt-24" id="experience">
+<div class="flex flex-col space-y-space-xs pb-space-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<h2 class="font-label-meta text-label-meta uppercase tracking-widest text-on-surface font-semibold">Chronology · Strict Separation of Terms</h2>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface">Experience &amp; Education</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Presented with complete transparency without inflated “years of experience” tallies. Every role, internship, and degree is recorded with literal accuracy.
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Experience Column -->
+<div class="lg:col-span-7 space-y-space-lg">
+<div class="border-b border-outline-variant/40 pb-2">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Professional History</span>
+</div>
+<!-- Paid Employment -->
+<div class="bg-surface rounded-xl p-space-lg border border-outline-variant/60 space-y-space-xs relative">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container/10 text-primary-container font-label-code text-[11px] font-semibold uppercase tracking-wider border border-primary-container/20">
+              Paid Employment
+            </span>
+<span class="font-label-code text-label-code text-on-surface-variant">June 2026 – August 2026</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface pt-1">Management Information Systems (MIS) Assistant</h3>
+<p class="font-label-code text-label-code text-outline">Enterprise Operational Systems Department</p>
+<p class="font-body-md text-body-md text-on-surface-variant pt-2 leading-relaxed">
+            Supported operational software maintenance, database upkeep, internal troubleshooting, and continuous systems enhancement across departmental users. Ensured uptime and assisted non-technical personnel with workflow resolution.
+          </p>
+</div>
+<!-- Internship -->
+<div class="bg-surface rounded-xl p-space-lg border border-outline-variant/60 space-y-space-xs">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-code text-[11px] font-semibold uppercase tracking-wider border border-outline-variant/50">
+              Structured Internship
+            </span>
+<span class="font-label-code text-label-code text-on-surface-variant">November 2025 – May 2026</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface pt-1">Management Information Systems (MIS) Assistant Intern</h3>
+<p class="font-label-code text-label-code text-outline">Information Systems Division</p>
+<p class="font-body-md text-body-md text-on-surface-variant pt-2 leading-relaxed">
+            Completed structured internship assisting with enterprise software tools, technical internal documentation, software support, and hands-on system verification before deployment gates.
+          </p>
+</div>
+</div>
+<!-- Education Column -->
+<div class="lg:col-span-5 space-y-space-lg">
+<div class="border-b border-outline-variant/40 pb-2">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Academic Foundation</span>
+</div>
+<div class="bg-surface rounded-xl p-space-lg border border-outline-variant/60 space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-code text-[11px] text-on-surface border border-outline-variant/60">Bachelor's Degree</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Graduation: September 2026</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface pt-1">Bachelor of Science in Information Technology</h3>
+<p class="font-label-code text-label-code text-primary font-medium">Specialization: Mobile &amp; Web Applications</p>
+<p class="font-body-sm text-body-sm text-outline">National University Manila · Manila, Philippines</p>
+<p class="font-body-md text-body-md text-on-surface-variant pt-2 leading-relaxed">
+            Coursework centered on relational database architecture, distributed application design, algorithms, computer networking, and full lifecycle software engineering.
+          </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/60 space-y-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-on-surface font-semibold">Commitment to Rigor</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Technical accuracy and verifiable credentials over buzzwords. Every project demonstrated in this portfolio reflects hands-on code committed to git and reviewed under production-level standards.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT & CONTACT SECTION -->
+<section class="max-w-[1120px] w-full mx-auto px-margin md:px-gutter-desktop py-space-2xl border-t border-outline-variant/40 scroll-mt-24" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- About Statement -->
+<div class="lg:col-span-6 space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<h2 class="font-label-meta text-label-meta uppercase tracking-widest text-on-surface font-semibold">About My Work</h2>
+</div>
+<p class="font-headline-lg text-headline-lg text-on-surface">Pragmatic Logic. Resilient Backends.</p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          I am a full-stack developer with a natural affinity for backend architecture, data integrity, and building software that solves concrete business operational challenges.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Rather than focusing on superficial polish alone, I prioritize building maintainable data models, resilient business logic, and pragmatic user experiences that simplify demanding day-to-day administrative tasks. I take full personal ownership of projects from initial scoping to production maintenance.
+        </p>
+<div class="pt-2 flex items-center gap-4">
+<a class="inline-flex items-center gap-2 px-space-md py-2.5 bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold rounded-lg hover:bg-secondary transition-colors shadow-sm" href="/resume/John_Matthew_Banto_Resume.pdf" target="_blank">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Download Résumé (Official PDF)</span>
+</a>
+</div>
+</div>
+<!-- Contact direct channels -->
+<div class="lg:col-span-6 bg-surface rounded-xl p-space-lg md:p-space-xl border border-outline-variant/60 shadow-sm space-y-space-md scroll-mt-24" id="contact">
+<div class="space-y-1 border-b border-outline-variant/40 pb-space-sm">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-secondary font-semibold">Direct Communication</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Initiate Contact</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            No intermediaries or database contact forms. Direct reachability for engineering inquiries and remote role discussions.
+          </p>
+</div>
+<div class="space-y-space-sm">
+<!-- Email Box -->
+<div class="p-space-sm bg-surface-container rounded-lg border border-outline-variant/50 flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">mail</span>
+<span class="font-label-code text-label-code text-on-surface truncate select-all" id="email-address-text">johnmatthewbanto333@gmail.com</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<button class="px-2.5 py-1 text-[12px] font-label-code bg-surface hover:bg-surface-container-high rounded border border-outline-variant/60 text-on-surface transition-colors flex items-center gap-1" id="copy-btn" onclick="copyEmailToClipboard()" title="Copy to clipboard">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span id="copy-btn-text">Copy</span>
+</button>
+<a class="px-2.5 py-1 text-[12px] font-label-code bg-primary-container text-on-primary hover:bg-secondary rounded transition-colors flex items-center gap-1" href="mailto:johnmatthewbanto333@gmail.com">
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+<span>Open Mail</span>
+</a>
+</div>
+</div>
+<!-- Social Links Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<a class="p-space-sm bg-surface-container rounded-lg border border-outline-variant/50 hover:border-primary-container transition-all flex items-center justify-between group" href="https://github.com/MattU27" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-on-surface group-hover:text-primary">code</span>
+<div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface block">GitHub</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">@MattU27</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary group-hover:translate-x-0.5 transition-transform">arrow_outward</span>
+</a>
+<a class="p-space-sm bg-surface-container rounded-lg border border-outline-variant/50 hover:border-primary-container transition-all flex items-center justify-between group" href="https://www.linkedin.com/in/john-matthew-banto-593008392/" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-on-surface group-hover:text-primary">badge</span>
+<div>
+<span class="font-headline-sm text-body-sm font-semibold text-on-surface block">LinkedIn</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">John Matthew Banto</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary group-hover:translate-x-0.5 transition-transform">arrow_outward</span>
+</a>
+</div>
+<!-- Timezone & Async info banner -->
+<div class="pt-2 flex items-start gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 pt-0.5">nest_clock_farsight_analog</span>
+<p class="font-body-sm text-[12px] leading-relaxed">
+<strong>Location:</strong> Manila, Philippines (UTC+8). Accustomed to async collaboration with international engineering teams, as well as dedicated scheduled overlap with APAC, EMEA, and US EST timezones.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchTab(projectId, tabKey) {
+    const tabs = ['context', 'workflows', 'decisions', 'lessons'];
+    tabs.forEach(t => {
+      const panel = document.getElementById(projectId + '-panel-' + t);
+      const btn = document.getElementById(projectId + '-btn-' + t);
+      if (panel && btn) {
+        if (t === tabKey) {
+          panel.classList.remove('hidden');
+          panel.classList.add('block');
+          btn.classList.add('border-primary-container', 'text-on-surface', 'bg-surface-container-low', 'font-semibold');
+          btn.classList.remove('border-transparent', 'text-on-surface-variant', 'font-medium');
+        } else {
+          panel.classList.remove('block');
+          panel.classList.add('hidden');
+          btn.classList.remove('border-primary-container', 'text-on-surface', 'bg-surface-container-low', 'font-semibold');
+          btn.classList.add('border-transparent', 'text-on-surface-variant', 'font-medium');
+        }
+      }
+    });
+  }
+
+  function copyEmailToClipboard() {
+    const email = 'johnmatthewbanto333@gmail.com';
+    navigator.clipboard.writeText(email).then(() => {
+      const btnText = document.getElementById('copy-btn-text');
+      if (btnText) {
+        btnText.innerText = 'Copied!';
+        setTimeout(() => {
+          btnText.innerText = 'Copy';
+        }, 2200);
+      }
+    }).catch(err => {
+      console.error('Failed to copy email:', err);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low border-t border-outline-variant/40 mt-space-3xl"><div class="max-w-[1120px] mx-auto px-margin md:px-gutter-desktop py-space-2xl"><div class="flex flex-col md:flex-row md:items-center justify-between gap-space-lg pb-space-xl border-b border-outline-variant/40"><div class="space-y-space-xs"><div class="font-headline-md text-headline-md text-on-surface">John Matthew Banto</div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Engineering robust full-stack architectures, high-performance backends, and deliberate digital surfaces.</p></div><div class="flex flex-col sm:flex-row sm:items-center gap-space-md"><div class="inline-flex items-center gap-2 px-space-md py-space-xs rounded-full bg-surface-container border border-outline-variant/60"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-meta text-label-meta text-on-surface uppercase tracking-wide">Available for Roles</span></div><div class="inline-flex items-center gap-2 font-label-code text-label-code text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-outline">schedule</span><span>UTC+8 · Manila, PH</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-lg"><a class="text-on-surface-variant hover:text-on-surface transition-colors underline-offset-4 hover:underline" href="https://github.com/MattU27" rel="noopener noreferrer" target="_blank">GitHub</a><a class="text-on-surface-variant hover:text-on-surface transition-colors underline-offset-4 hover:underline" href="https://www.linkedin.com/in/john-matthew-banto-593008392/" rel="noopener noreferrer" target="_blank">LinkedIn</a><a class="text-on-surface-variant hover:text-on-surface transition-colors underline-offset-4 hover:underline" href="mailto:johnmatthewbanto333@gmail.com">johnmatthewbanto333@gmail.com</a></div><div class="font-label-meta text-label-meta text-outline">© 2025 Matt Banto · Crafted with architectural restraint</div></div></div></footer></body></html>

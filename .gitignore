@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.npm-cache/
+*.tsbuildinfo
+playwright-report/
+test-results/
+.tool-cache/
+review/media-audit/
+
+out/

@@ -1,0 +1,98 @@
+{
+  "results": [
+    {
+      "viewport": 1440,
+      "info": {
+        "duration": 298,
+        "width": 1280,
+        "height": 720
+      },
+      "seeks": [
+        44,
+        90,
+        150,
+        205,
+        240,
+        280,
+        297.5
+      ],
+      "chapters": {
+        "cues": 5,
+        "kind": "chapters"
+      },
+      "initial": {
+        "autoplay": false,
+        "paused": true,
+        "preload": "none",
+        "controls": true
+      },
+      "closedDoesNotLoadVideo": true,
+      "keyboardDisclosure": true,
+      "pauseOnClose": true,
+      "overflow": false
+    },
+    {
+      "viewport": 768,
+      "info": {
+        "duration": 298,
+        "width": 1280,
+        "height": 720
+      },
+      "seeks": [
+        44,
+        90,
+        150,
+        205,
+        240,
+        280,
+        297.5
+      ],
+      "chapters": {
+        "cues": 5,
+        "kind": "chapters"
+      },
+      "initial": {
+        "autoplay": false,
+        "paused": true,
+        "preload": "none",
+        "controls": true
+      },
+      "closedDoesNotLoadVideo": true,
+      "keyboardDisclosure": true,
+      "pauseOnClose": true,
+      "overflow": false
+    },
+    {
+      "viewport": 360,
+      "info": {
+        "duration": 298,
+        "width": 1280,
+        "height": 720
+      },
+      "seeks": [
+        44,
+        90,
+        150,
+        205,
+        240,
+        280,
+        297.5
+      ],
+      "chapters": {
+        "cues": 5,
+        "kind": "chapters"
+      },
+      "initial": {
+        "autoplay": false,
+        "paused": true,
+        "preload": "none",
+        "controls": true
+      },
+      "closedDoesNotLoadVideo": true,
+      "keyboardDisclosure": true,
+      "pauseOnClose": true,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

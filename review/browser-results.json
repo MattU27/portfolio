@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "layout": {
+        "viewport": 1440,
+        "document": 1440,
+        "overflowing": [],
+        "brokenAnchors": [],
+        "brokenImages": [],
+        "smallTargets": []
+      },
+      "navigation": "passed",
+      "emailCopy": "passed"
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "layout": {
+        "viewport": 768,
+        "document": 768,
+        "overflowing": [],
+        "brokenAnchors": [],
+        "brokenImages": [],
+        "smallTargets": []
+      },
+      "navigation": "passed",
+      "emailCopy": "passed"
+    },
+    {
+      "name": "mobile",
+      "width": 360,
+      "height": 800,
+      "layout": {
+        "viewport": 360,
+        "document": 360,
+        "overflowing": [],
+        "brokenAnchors": [],
+        "brokenImages": [],
+        "smallTargets": []
+      },
+      "navigation": "passed",
+      "emailCopy": "passed"
+    }
+  ],
+  "clipboardFailure": "passed",
+  "resume": "verified bytes and hash",
+  "keyboardSkipAndFocus": {
+    "style": "solid",
+    "width": "3px"
+  },
+  "reducedMotion": "passed",
+  "errors": [],
+  "failedResponses": []
+}
