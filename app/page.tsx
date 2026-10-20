@@ -16,9 +16,9 @@ export default function Home() {
           <a
             className="wordmark"
             href="#home"
-            aria-label="Matt Banto, back to top"
+            aria-label={`${profile.name}, back to top`}
           >
-            Matt Banto<span className="wordmark-dot">.</span>
+            {profile.name}<span className="wordmark-dot">.</span>
           </a>
           <nav aria-label="Main navigation">
             <a href="#work">Work</a>
