@@ -1,0 +1,445 @@
+{
+  "base": "http://127.0.0.1:3003/portfolio/",
+  "results": [
+    {
+      "width": 360,
+      "reserves": [
+        {
+          "width": 282,
+          "height": 159,
+          "w": "1280",
+          "h": "720",
+          "loading": "lazy",
+          "alt": "E-Bidding pre-bid report form with branch, project and opportunity ID fields, using fictional test data"
+        },
+        {
+          "width": 282,
+          "height": 159,
+          "w": "1280",
+          "h": "720",
+          "loading": "lazy",
+          "alt": "E-Shipment Tracking shipment details beside approval progress and timestamped tracking updates, using fictional test data"
+        }
+      ],
+      "proofLinks": [
+        {
+          "href": "/portfolio/media/e-bidding-workflow.jpg",
+          "label": "Open larger screenshot: Pre-bid report creation (new tab)",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/portfolio/media/shipment-workflow.jpg",
+          "label": "Open larger screenshot: Shipment progress at a glance (new tab)",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ],
+      "metrics": {
+        "overflow": false,
+        "broken": [],
+        "missingAlt": 0,
+        "small": [],
+        "svgs": 0,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Thoughtful software.A backend focus."
+          },
+          {
+            "level": 2,
+            "text": "Built for the way people work."
+          },
+          {
+            "level": 3,
+            "text": "Internal E-Bidding System"
+          },
+          {
+            "level": 4,
+            "text": "My contribution"
+          },
+          {
+            "level": 4,
+            "text": "What the system supports"
+          },
+          {
+            "level": 3,
+            "text": "Shipment Tracking System"
+          },
+          {
+            "level": 4,
+            "text": "My contribution"
+          },
+          {
+            "level": 4,
+            "text": "What the system supports"
+          },
+          {
+            "level": 3,
+            "text": "See the projects in action"
+          },
+          {
+            "level": 2,
+            "text": "Full stack, with a pull toward the backend."
+          },
+          {
+            "level": 3,
+            "text": "Web development"
+          },
+          {
+            "level": 3,
+            "text": "Backend & data"
+          },
+          {
+            "level": 3,
+            "text": "Project experience"
+          },
+          {
+            "level": 3,
+            "text": "Design & development tools"
+          },
+          {
+            "level": 2,
+            "text": "The path so far."
+          },
+          {
+            "level": 3,
+            "text": "Management Information Systems (MIS) Assistant"
+          },
+          {
+            "level": 3,
+            "text": "MIS Assistant Intern"
+          },
+          {
+            "level": 3,
+            "text": "BS Information Technology"
+          },
+          {
+            "level": 2,
+            "text": "Let’s buildsomething useful."
+          }
+        ]
+      },
+      "keyboardSkipAndFocus": {
+        "style": "solid",
+        "width": "3px"
+      },
+      "anchors": true,
+      "reducedMotion": true,
+      "video": {
+        "duration": 298,
+        "width": 1280,
+        "height": 720
+      },
+      "seeks": [
+        90,
+        280,
+        297
+      ],
+      "chapters": {
+        "kind": "chapters",
+        "cues": 5
+      },
+      "pauseOnClose": true,
+      "resumeHashAndDownload": true
+    },
+    {
+      "width": 768,
+      "reserves": [
+        {
+          "width": 376,
+          "height": 212,
+          "w": "1280",
+          "h": "720",
+          "loading": "lazy",
+          "alt": "E-Bidding pre-bid report form with branch, project and opportunity ID fields, using fictional test data"
+        },
+        {
+          "width": 376,
+          "height": 212,
+          "w": "1280",
+          "h": "720",
+          "loading": "lazy",
+          "alt": "E-Shipment Tracking shipment details beside approval progress and timestamped tracking updates, using fictional test data"
+        }
+      ],
+      "proofLinks": [
+        {
+          "href": "/portfolio/media/e-bidding-workflow.jpg",
+          "label": "Open larger screenshot: Pre-bid report creation (new tab)",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/portfolio/media/shipment-workflow.jpg",
+          "label": "Open larger screenshot: Shipment progress at a glance (new tab)",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ],
+      "metrics": {
+        "overflow": false,
+        "broken": [],
+        "missingAlt": 0,
+        "small": [],
+        "svgs": 0,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Thoughtful software.A backend focus."
+          },
+          {
+            "level": 2,
+            "text": "Built for the way people work."
+          },
+          {
+            "level": 3,
+            "text": "Internal E-Bidding System"
+          },
+          {
+            "level": 4,
+            "text": "My contribution"
+          },
+          {
+            "level": 4,
+            "text": "What the system supports"
+          },
+          {
+            "level": 3,
+            "text": "Shipment Tracking System"
+          },
+          {
+            "level": 4,
+            "text": "My contribution"
+          },
+          {
+            "level": 4,
+            "text": "What the system supports"
+          },
+          {
+            "level": 3,
+            "text": "See the projects in action"
+          },
+          {
+            "level": 2,
+            "text": "Full stack, with a pull toward the backend."
+          },
+          {
+            "level": 3,
+            "text": "Web development"
+          },
+          {
+            "level": 3,
+            "text": "Backend & data"
+          },
+          {
+            "level": 3,
+            "text": "Project experience"
+          },
+          {
+            "level": 3,
+            "text": "Design & development tools"
+          },
+          {
+            "level": 2,
+            "text": "The path so far."
+          },
+          {
+            "level": 3,
+            "text": "Management Information Systems (MIS) Assistant"
+          },
+          {
+            "level": 3,
+            "text": "MIS Assistant Intern"
+          },
+          {
+            "level": 3,
+            "text": "BS Information Technology"
+          },
+          {
+            "level": 2,
+            "text": "Let’s buildsomething useful."
+          }
+        ]
+      },
+      "keyboardSkipAndFocus": {
+        "style": "solid",
+        "width": "3px"
+      },
+      "anchors": true,
+      "reducedMotion": true,
+      "video": {
+        "duration": 298,
+        "width": 1280,
+        "height": 720
+      },
+      "seeks": [
+        90,
+        280,
+        297
+      ],
+      "chapters": {
+        "kind": "chapters",
+        "cues": 5
+      },
+      "pauseOnClose": true,
+      "resumeHashAndDownload": true
+    },
+    {
+      "width": 1440,
+      "reserves": [
+        {
+          "width": 660,
+          "height": 371,
+          "w": "1280",
+          "h": "720",
+          "loading": "lazy",
+          "alt": "E-Bidding pre-bid report form with branch, project and opportunity ID fields, using fictional test data"
+        },
+        {
+          "width": 660,
+          "height": 371,
+          "w": "1280",
+          "h": "720",
+          "loading": "lazy",
+          "alt": "E-Shipment Tracking shipment details beside approval progress and timestamped tracking updates, using fictional test data"
+        }
+      ],
+      "proofLinks": [
+        {
+          "href": "/portfolio/media/e-bidding-workflow.jpg",
+          "label": "Open larger screenshot: Pre-bid report creation (new tab)",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        },
+        {
+          "href": "/portfolio/media/shipment-workflow.jpg",
+          "label": "Open larger screenshot: Shipment progress at a glance (new tab)",
+          "target": "_blank",
+          "rel": "noopener noreferrer"
+        }
+      ],
+      "metrics": {
+        "overflow": false,
+        "broken": [],
+        "missingAlt": 0,
+        "small": [],
+        "svgs": 0,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Thoughtful software.A backend focus."
+          },
+          {
+            "level": 2,
+            "text": "Built for the way people work."
+          },
+          {
+            "level": 3,
+            "text": "Internal E-Bidding System"
+          },
+          {
+            "level": 4,
+            "text": "My contribution"
+          },
+          {
+            "level": 4,
+            "text": "What the system supports"
+          },
+          {
+            "level": 3,
+            "text": "Shipment Tracking System"
+          },
+          {
+            "level": 4,
+            "text": "My contribution"
+          },
+          {
+            "level": 4,
+            "text": "What the system supports"
+          },
+          {
+            "level": 3,
+            "text": "See the projects in action"
+          },
+          {
+            "level": 2,
+            "text": "Full stack, with a pull toward the backend."
+          },
+          {
+            "level": 3,
+            "text": "Web development"
+          },
+          {
+            "level": 3,
+            "text": "Backend & data"
+          },
+          {
+            "level": 3,
+            "text": "Project experience"
+          },
+          {
+            "level": 3,
+            "text": "Design & development tools"
+          },
+          {
+            "level": 2,
+            "text": "The path so far."
+          },
+          {
+            "level": 3,
+            "text": "Management Information Systems (MIS) Assistant"
+          },
+          {
+            "level": 3,
+            "text": "MIS Assistant Intern"
+          },
+          {
+            "level": 3,
+            "text": "BS Information Technology"
+          },
+          {
+            "level": 2,
+            "text": "Let’s buildsomething useful."
+          }
+        ]
+      },
+      "keyboardSkipAndFocus": {
+        "style": "solid",
+        "width": "3px"
+      },
+      "anchors": true,
+      "reducedMotion": true,
+      "video": {
+        "duration": 298,
+        "width": 1280,
+        "height": 720
+      },
+      "seeks": [
+        90,
+        280,
+        297
+      ],
+      "chapters": {
+        "kind": "chapters",
+        "cues": 5
+      },
+      "pauseOnClose": true,
+      "resumeHashAndDownload": true
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 360,
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "width": 1440,
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "errors": [],
+  "bad": []
+}

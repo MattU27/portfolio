@@ -38,3 +38,14 @@ The site remains useful without these assets. Add them only after factual verifi
 
 
 Update 21 October 2026: the user confirmed all displayed details are dummy data and explicitly requested removal of all censoring. The complete served walkthrough is now uncensored. Earlier redaction notes describe a superseded edit. The original source remains unchanged.
+
+
+## Local refinement - 21 October 2026
+
+No commit, push or deployment authorized for this revision. Existing design and framework retained.
+
+Two compact project screenshots were extracted directly from the user-approved uncensored walkthrough: E-Bidding at 0:36 (structured pre-bid form) and Shipment Tracking at 4:40 (shipment details, approval progress and tracking updates). These are real application frames, not generated mockups. The user previously confirmed every displayed detail is dummy data and approved the uncensored recording; the current request authorizes using that approved material for previews. Both figures disclose fictional test data. Full source video, served walkthrough and resume remain unchanged.
+
+Project highlights use existing confirmed scope; opportunity ID availability feedback is directly visible in the approved walkthrough. The shipment maintenance approach comes from existing approved content. No architecture, policy, performance or impact claim was added.
+
+The user confirmed internship duties during this refinement: hands-on help with employees' technical concerns, with most time spent developing systems. The page uses that description, adds GAKKEN Philippines to both separate periods, and assigns neither featured project to the internship. A specific technical decision or challenge remains unconfirmed and is not invented.

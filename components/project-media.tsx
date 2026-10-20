@@ -1,3 +1,4 @@
+import { Arrow } from "@/components/ui";
 import Image from "next/image";
 
 export type ProjectMediaContent = {
@@ -27,12 +28,12 @@ export function ProjectMedia({ media, projectTitle }: { media: ProjectMediaConte
           <p>{media.description}</p>
           <p className="project-media-note">Recorded application · Edited for privacy · No audio</p>
           <a className="text-link" href={media.image} target="_blank" rel="noopener noreferrer">
-            View full-size screenshot <span aria-hidden="true">↗</span>
+            View full-size screenshot <Arrow diagonal />
           </a>
         </figcaption>
       </figure>
       <details className="project-video">
-        <summary>Watch {media.seconds}-second excerpt <span aria-hidden="true">↗</span></summary>
+        <summary>Watch {media.seconds}-second excerpt <Arrow diagonal /></summary>
         <video
           controls
           playsInline

@@ -1,3 +1,17 @@
+# Local refinement acceptance - 21 October 2026
+
+Local changes only; no commit, push or deployment. The existing repository was clean at the start (HEAD 19f6039). Existing framework, dependencies, Pages configuration and original export retained.
+
+Ran npm run lint, npm run typecheck and the GitHub Pages static build with GITHUB_PAGES=true and PAGES_BASE_PATH=/portfolio. Existing browser-check.cjs and full-walkthrough-check.cjs passed. The PDF-request test now resolves the shared resume URL correctly when the test base includes /portfolio/.
+
+Independent tests/refinement-check.cjs passed against the actual static export at 360, 768 and 1440 pixels: no overflow; decoded images with alt text; meaningful heading order; full-size screenshot links; touch target sizes; SVG decorative semantics; skip link and visible focus; anchors; reduced motion; no initial MP4 request; full video play, seek to 90/280/297 seconds, chapter cues and pause on close; approved resume hash and download. No page/console errors or 400+ responses. Axe scans at 360 and 1440 reported zero violations and zero incomplete checks.
+
+Actual browser screenshots: refinement-{360,768,1440}-{full,work}.png. Desktop and mobile work sections were visually reviewed. The new evidence images total 142,184 bytes, use lazy loading and explicit 1280 x 720 dimensions to reserve layout space. Source checks are in refinement-preserved-assets.json; the approved resume, portrait and full video match HEAD byte for byte.
+
+Limits: tested in Chromium using responsive desktop viewports, not physical phones, Safari, Firefox or a screen reader. Automated accessibility results do not establish full assistive-technology conformance. No fabricated technical decision or outcome was added. The user confirmed hands-on employee support and primarily system development during the internship, but did not supply a specific project architecture decision or challenge.
+
+Older verification history follows below.
+
 # Publishing update - 21 October 2026
 
 Removed all censoring at the user's request after confirmation that the recording contains dummy data. Complete final video decoded without errors. Local lint, TypeScript and GitHub Pages export passed. GitHub Actions independently passed dependency installation, lint, TypeScript and the static export. The deployment is published at https://mattu27.github.io/portfolio/ from https://github.com/MattU27/portfolio.
@@ -33,3 +47,5 @@ Portrait update: added the user-approved photo to the hero, with descriptive alt
 - `desktop-first-screen.png`, `mobile-first-screen.png`: first-screen previews.
 
 The browser script is `tests/browser-check.cjs`; it expects Playwright to be available and `PORTFOLIO_CDP` to name an existing local Chromium CDP endpoint. Set `PORTFOLIO_URL` to override the default URL. The run used Codex's bundled Playwright and a local agent-browser session; no Playwright runtime dependency was added to the portfolio.
+
+Publication approval: the user subsequently authorized committing, pushing and deploying this reviewed refinement on 21 October 2026. Earlier local-only notes describe the review stage.

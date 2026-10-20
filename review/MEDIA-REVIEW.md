@@ -9,3 +9,8 @@ Served video: public/media/full-walkthrough.mp4, H.264, 1280 x 720, 24 fps, 6,42
 Preview: actual opening at 1 second. Chapters: introduction 0:00, E-Bidding 0:16, lessons 2:40, Shipment Tracking 2:58, closing 4:52. The player has native controls, no autoplay, lazy loading and pauses on close.
 
 The approved portrait stays in the hero. The GitHub Pages export uses repository-prefixed paths for images, video, chapter track and resume. Raw review frames and private OCR data are excluded from source control.
+
+
+## Local project previews - 21 October 2026
+
+Added public/media/e-bidding-workflow.jpg from the approved video at 0:36 and public/media/shipment-workflow.jpg at 4:40. Total JPEG payload 142,184 bytes. Both retain the real recording frame, use fictional test-data disclosure, descriptive alternative text, native lazy loading and 1280 x 720 dimensions. Image links open the full-size frame for readable inspection. No new excerpt videos or initial MP4 download were introduced. The full walkthrough and approved resume remain byte-for-byte unchanged. This revision is local only.

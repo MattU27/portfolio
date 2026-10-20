@@ -15,10 +15,16 @@ export const projects = [
     title: "Internal E-Bidding System",
     category: "Business workflows",
     summary:
-      "An internal system for managing bidding workflows, approvals, reporting and post-award work.",
+      "Bidding work involves reports, approvals and post-award steps. This internal system brings those workflows into one application.",
     contribution:
       "I was the sole full-stack developer, taking the system from requirements gathering through interface and database work, implementation, pre-production QA, deployment and maintenance.",
-    scope: ["Bidding workflows", "Approvals & reporting", "Post-award work"],
+    preview: {
+      image: "/media/e-bidding-workflow.jpg",
+      alt: "E-Bidding pre-bid report form with branch, project and opportunity ID fields, using fictional test data",
+      caption: "Pre-bid report creation",
+      highlights: ["Structured pre-bid reports", "Approval workflows and PDF reports", "Post-award work"],
+      detail: "The walkthrough shows opportunity ID availability feedback beside the form field.",
+    },
     stack:
       "Next.js · React · TypeScript · Supabase · PostgreSQL · Tailwind CSS",
     note: "Internal company application. Source code and production access are private.",
@@ -28,14 +34,16 @@ export const projects = [
     title: "Shipment Tracking System",
     category: "Operations & tracking",
     summary:
-      "An internal application for shipment tracking, proof of delivery, role-based access and audit-related functionality.",
+      "Shipment work needs a clear view of requests, approvals and delivery progress. This internal application supports tracking through proof of delivery.",
     contribution:
-      "I handled development and ongoing maintenance. A shared spreadsheet and conversations with users helped me track concerns and decide what to improve next.",
-    scope: [
-      "Shipment tracking",
-      "Proof of delivery",
-      "Access & audit functionality",
-    ],
+      "I was the sole full-stack developer, building and maintaining the application and working through user-requested improvements.",
+    preview: {
+      image: "/media/shipment-workflow.jpg",
+      alt: "E-Shipment Tracking shipment details beside approval progress and timestamped tracking updates, using fictional test data",
+      caption: "Shipment progress at a glance",
+      highlights: ["Shipment requests and tracking", "Approval progress and status updates", "Proof of delivery"],
+      detail: "A shared spreadsheet and conversations with users helped me prioritize maintenance and improvements.",
+    },
     stack:
       "Next.js · React · TypeScript · Supabase · PostgreSQL · Tailwind CSS",
     note: "Internal company application. Source code and production access are private.",

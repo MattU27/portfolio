@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Arrow, Play } from "@/components/ui";
 import { assetPath } from "@/lib/asset-path";
 import { useRef, useState } from "react";
 
@@ -36,12 +37,12 @@ export function FullWalkthrough() {
               height={720}
               sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1000px) calc(100vw - 64px), 1200px"
             />
-            <span className="walkthrough-play" aria-hidden="true">▶</span>
+            <span className="walkthrough-play" aria-hidden="true"><Play /></span>
           </span>
           <span className="walkthrough-toggle">
             <span className="walkthrough-closed-label">Watch the full walkthrough · 4 min 58 sec</span>
             <span className="walkthrough-open-label">Close the walkthrough</span>
-            <span aria-hidden="true">↗</span>
+            <Arrow diagonal />
           </span>
         </summary>
         {hasOpened && (

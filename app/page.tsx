@@ -1,6 +1,6 @@
 import { assetPath } from "@/lib/asset-path";
 import { profile, projects, skills } from "@/lib/content";
-import { Arrow, SectionHeading } from "@/components/ui";
+import { Arrow, Lock, SectionHeading } from "@/components/ui";
 import { CopyEmail } from "@/components/copy-email";
 import Image from "next/image";
 import { FullWalkthrough } from "@/components/full-walkthrough";
@@ -59,10 +59,10 @@ export default function Home() {
               </p>
               <div className="hero-actions">
                 <a href="#work" className="button">
-                  Explore my work <span aria-hidden="true">↓</span>
+                  Explore my work <Arrow direction="down" />
                 </a>
                 <a href={assetPath(profile.resume)} className="text-link" download>
-                  Résumé (PDF) <span aria-hidden="true">↓</span>
+                  Résumé (PDF) <Arrow direction="down" />
                 </a>
               </div>
             </div>
@@ -98,19 +98,38 @@ export default function Home() {
                   <p className="eyebrow">{project.category}</p>
                   <h3>{project.title}</h3>
                   <p className="project-summary">{project.summary}</p>
-                  <ul className="scope-list">
-                    {project.scope.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
+
                 </div>
                 <div className="project-contribution">
                   <p className="project-stack">{project.stack}</p>
                   <h4>My contribution</h4>
                   <p>{project.contribution}</p>
                   <p className="private-note">
-                    <span aria-hidden="true">↳</span> {project.note}
+                    <Lock /> {project.note}
                   </p>
+                </div>
+                <div className="project-proof">
+                  <figure>
+                    <a href={assetPath(project.preview.image)} target="_blank" rel="noopener noreferrer" aria-label={`Open larger screenshot: ${project.preview.caption} (new tab)`}>
+                      <Image
+                        src={assetPath(project.preview.image)}
+                        alt={project.preview.alt}
+                        width={1280}
+                        height={720}
+                        sizes="(max-width: 700px) calc(100vw - 76px), (max-width: 1000px) 55vw, 600px"
+                        loading="lazy"
+                      />
+                    </a>
+                    <figcaption>
+                      <span>{project.preview.caption}</span>
+                      <span>Fictional test data · Select image to enlarge <Arrow diagonal /></span>
+                    </figcaption>
+                  </figure>
+                  <div className="project-proof-copy">
+                    <h4>What the system supports</h4>
+                    <ul>{project.preview.highlights.map((item) => <li key={item}>{item}</li>)}</ul>
+                    <p>{project.preview.detail}</p>
+                  </div>
                 </div>
               </article>
             ))}
@@ -172,6 +191,7 @@ export default function Home() {
               <article className="timeline-item">
                 <p className="eyebrow">Paid employment · June–August 2026</p>
                 <h3>Management Information Systems (MIS) Assistant</h3>
+                <p className="experience-company">GAKKEN Philippines</p>
                 <p>
                   Full-stack work on internal business systems, including
                   development, pre-production QA, deployment, maintenance and
@@ -181,9 +201,10 @@ export default function Home() {
               <article className="timeline-item">
                 <p className="eyebrow">Internship · November 2025–May 2026</p>
                 <h3>MIS Assistant Intern</h3>
+                <p className="experience-company">GAKKEN Philippines</p>
                 <p>
-                  A separate internship period before my paid MIS Assistant
-                  role.
+                  Supported employees with hands-on technical concerns, while
+                  spending most of my internship developing systems.
                 </p>
               </article>
             </div>
@@ -217,7 +238,7 @@ export default function Home() {
               </a>
               <CopyEmail email={profile.email} />
               <a href={assetPath(profile.resume)} className="resume-link" download>
-                Download résumé (PDF) <span aria-hidden="true">↓</span>
+                Download résumé (PDF) <Arrow direction="down" />
               </a>
               <div className="social-links">
                 <a href={profile.github}>
@@ -237,7 +258,7 @@ export default function Home() {
           © {new Date().getFullYear()} {profile.name}
         </p>
         <a href="#home">
-          Back to top <span aria-hidden="true">↑</span>
+          Back to top <Arrow direction="up" />
         </a>
       </footer>
     </>

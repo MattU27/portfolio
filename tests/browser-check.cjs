@@ -60,7 +60,7 @@ const crypto = require('node:crypto');
   assert.ok(links.includes('https://www.linkedin.com/in/john-matthew-banto-593008392/'));
   const resumeLinks = [...new Set(links.filter(h => h && h.endsWith('.pdf')))];
   assert.equal(resumeLinks.length, 1);
-  const pdf = await context.request.get(base + resumeLinks[0]);
+  const pdf = await context.request.get(new URL(resumeLinks[0], base).href);
   assert.equal(pdf.status(), 200);
   const pdfBytes = await pdf.body();
   assert.equal(pdfBytes.length, 104363);
