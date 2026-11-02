@@ -2,6 +2,18 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { createHash } from 'node:crypto';
 const widths = [[320,568],[360,800],[390,844],[768,1024],[1024,768],[1440,900]];
+for (const [width, height] of [[1024,768],[1440,900]]) test(`editorial opening exposes real work ${width}`, async ({ page }) => {
+  await page.setViewportSize({width,height});
+  await page.goto('./');
+  await expect(page.locator('h1')).toHaveText('John Matthew Banto.');
+  await expect(page.locator('.masthead img')).toHaveCount(0);
+  await expect(page.locator('#about .profile-portrait img')).toHaveCount(1);
+  const evidence = await page.locator('.project-01 .project-visual img').boundingBox();
+  expect(evidence).not.toBeNull();
+  expect(evidence!.y).toBeLessThan(height - 100);
+  const opening = await page.locator('.masthead').boundingBox();
+  expect(opening!.y + opening!.height).toBeLessThanOrEqual(440);
+});
 for (const [width,height] of widths) test(`responsive layout and accessibility ${width}`, async ({ page }) => {
   await page.setViewportSize({width,height});
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
