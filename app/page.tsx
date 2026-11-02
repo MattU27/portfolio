@@ -12,7 +12,7 @@ export default function Home() {
       <header className="site-header">
         <div className="shell header-inner">
           <a className="wordmark" href="#home" aria-label={`${profile.name}, back to top`}>
-            <span className="brand-mark" aria-hidden="true">✳</span>{profile.name}
+            {profile.name}
           </a>
           <nav aria-label="Main navigation">
             <a href="#work">Work</a><a href="#about">About</a>
