@@ -13,7 +13,7 @@ export function FullWalkthrough() {
     <section className="walkthrough" aria-labelledby="walkthrough-title">
       <div className="walkthrough-intro">
         <p className="eyebrow">A closer look</p>
-        <h3 id="walkthrough-title">See the projects in action</h3>
+        <h3 id="walkthrough-title">See the systems in action.</h3>
         <p id="walkthrough-description">
           A complete walkthrough of E-Bidding and Shipment Tracking: what the
           systems do, my contribution, and what I learned along the way.
@@ -67,12 +67,20 @@ export function FullWalkthrough() {
           </div>
         )}
       </details>
+      <div className="walkthrough-access"><a className="text-link" href={assetPath("/media/full-walkthrough.mp4")}>Open the video directly (MP4) <Arrow diagonal /></a><p className="walkthrough-note">If playback fails, use the direct link or read the visual summary below.</p></div>
       <ol className="walkthrough-chapters" id="walkthrough-chapters" aria-label="Walkthrough chapters">
         <li><span>0:00</span> Introduction</li>
         <li><span>0:16</span> E-Bidding</li>
         <li><span>2:40</span> What I learned</li>
         <li><span>2:58</span> Shipment Tracking</li>
       </ol>
+      <details className="video-description">
+        <summary>Read a visual summary of the walkthrough</summary>
+        <p>The recording has no audio. English explanatory text is embedded in the picture. All demonstrated records are fictional test data.</p>
+        <p><strong>E-Bidding:</strong> The walkthrough moves through a structured pre-bid report form, opportunity ID availability feedback, a review queue and a PDF report preview. It also shows bid item, quantity and price entry and post-qualification stages.</p>
+        <p><strong>What I learned:</strong> The planning section explains defining development stages and goals before using AI tools, then bringing fuller workflow planning to the shipment project.</p>
+        <p><strong>Shipment Tracking:</strong> The walkthrough shows a shipment request wizard, required-field feedback, logistics and cost entry, a searchable and filterable shipment list, decisions and remarks, and a shipment detail view with approval progress, timestamped tracking updates and reference numbers.</p>
+      </details>
     </section>
   );
 }

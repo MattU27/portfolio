@@ -1,7 +1,7 @@
 export const profile = {
   name: "John Matthew Banto",
   shortName: "Matt Banto",
-  portrait: "/images/matt-banto-portrait.png",
+  portrait: "/images/matt-banto-portrait-560.webp",
   email: "johnmatthewbanto333@gmail.com",
   github: "https://github.com/MattU27",
   linkedin: "https://www.linkedin.com/in/john-matthew-banto-593008392/",
@@ -14,10 +14,11 @@ export const projects = [
     number: "01",
     title: "Internal E-Bidding System",
     category: "Business workflows",
+    lead: "Bringing reports, approvals and post-award work into one application.",
     summary:
       "Bidding work involves reports, approvals and post-award steps. This internal system brings those workflows into one application.",
     contribution:
-      "I was the sole full-stack developer, taking the system from requirements gathering through interface and database work, implementation, pre-production QA, deployment and maintenance.",
+      "I was the sole full-stack developer, taking the system from requirements gathering through interface and database work, implementation, pre-production QA and maintenance.",
     preview: {
       image: "/media/e-bidding-workflow.jpg",
       alt: "E-Bidding pre-bid report form with branch, project and opportunity ID fields, using fictional test data",
@@ -32,7 +33,8 @@ export const projects = [
   {
     number: "02",
     title: "Shipment Tracking System",
-    category: "Operations & tracking",
+    category: "Operations and tracking",
+    lead: "A clearer view from shipment request to proof of delivery.",
     summary:
       "Shipment work needs a clear view of requests, approvals and delivery progress. This internal application supports tracking through proof of delivery.",
     contribution:
@@ -40,7 +42,7 @@ export const projects = [
     preview: {
       image: "/media/shipment-workflow.jpg",
       alt: "E-Shipment Tracking shipment details beside approval progress and timestamped tracking updates, using fictional test data",
-      caption: "Shipment progress at a glance",
+      caption: "Shipment details, approval progress and tracking updates",
       highlights: ["Shipment requests and tracking", "Approval progress and status updates", "Proof of delivery"],
       detail: "A shared spreadsheet and conversations with users helped me prioritize maintenance and improvements.",
     },
@@ -69,9 +71,9 @@ export const skills = [
   },
   {
     title: "Design & development tools",
-    items: "Figma, Playwright, Codex / ChatGPT",
+    items: "Codex / ChatGPT",
     description:
-      "Roughly a year of Figma collaboration, limited Playwright project experience, and AI-assisted development.",
+      "AI-assisted development with Codex/ChatGPT.",
   },
 ];
 

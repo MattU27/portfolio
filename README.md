@@ -8,10 +8,10 @@ Live website: https://mattu27.github.io/portfolio/
 
 ## Local development
 
-Requires Node.js 20.9+ and npm.
+Requires Node.js 22.12+ and npm for the application and test tooling.
 
 ```powershell
-npm ci
+npm ci --legacy-peer-deps
 npm run dev
 ```
 
@@ -36,3 +36,13 @@ The generated out/ folder is excluded from Git. No database, server credentials 
 Profile and project copy: lib/content.ts. Main layout: app/page.tsx. Walkthrough: components/full-walkthrough.tsx. Local media preparation: scripts/prepare-full-walkthrough.cjs (requires the original source recording).
 
 The approved resume is 104,363 bytes, SHA-256 9a4f103811b828171d7279495fa2260898da40888db222d56dd3b663a3939cbc. The original Stitch export code.html, DESIGN.md and screen.png is preserved for design reference; generated accomplishment claims from it were not treated as factual evidence. CONTENT-AUDIT.md and review/ document earlier implementation checks and revisions. Raw frame/OCR audit data and superseded media are excluded from Git.
+
+## Redesign checks and local preview
+
+The build script uses the supported webpack pipeline with one worker and full TypeScript checking. No framework upgrade is included. Install uses legacy peer resolution to preserve the existing ESLint dependency graph.
+
+After a Pages-mode build, run `PAGES_BASE_PATH=/portfolio npm run test:static` for local HTTP asset and original résumé integrity checks. Run `node scripts/serve-preview.mjs` for a loopback-only preview at http://127.0.0.1:4173/portfolio/.
+
+`npm run test:browser` starts its own local preview server and isolated Chromium. Set `CHROMIUM_PATH` to an existing compatible Chromium, or install the official Playwright browser separately. Stop manually running preview servers before this command. The browser suite requires a browser-capable environment; written tests are not proof of successful execution.
+
+The public résumé and original media remain unchanged. The 560px WebP portrait is a full-composition resized derivative of the original portrait, without crop or retouch.

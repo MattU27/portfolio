@@ -37,11 +37,13 @@ export function Play() {
 
 export function SectionHeading({
   number,
+  id,
   label,
   title,
   children,
 }: {
   number: string;
+  id?: string;
   label: string;
   title: string;
   children?: ReactNode;
@@ -52,7 +54,7 @@ export function SectionHeading({
         <p className="eyebrow">
           <span>{number}</span> {label}
         </p>
-        <h2>{title}</h2>
+        <h2 id={id}>{title}</h2>
       </div>
       {children ? <p className="section-intro">{children}</p> : null}
     </div>
