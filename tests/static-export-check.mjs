@@ -8,6 +8,10 @@ import crypto from 'node:crypto';
   const root = path.resolve(process.env.EXPORT_DIR || 'out');
   const prefix = process.env.PAGES_BASE_PATH || '';
   const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  for (const removed of ['matt-banto-about.jpg', 'matt-banto-outside-e.jpg', 'matt-banto-outside-i.jpg']) {
+    assert.ok(!html.includes(removed), `Removed photo is still referenced: ${removed}`);
+    assert.ok(!fs.existsSync(path.join(root, 'images', removed)), `Removed photo is still exported: ${removed}`);
+  }
   const assets = [...new Set([...html.matchAll(/(?:src|href)="([^"#]+)"/g)].map(m => m[1].replaceAll('&amp;', '&')).filter(x => x.startsWith('/')))];
   const server = http.createServer((req, res) => {
     const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
@@ -34,9 +38,7 @@ import crypto from 'node:crypto';
     const bytes = Buffer.from(await pdf.arrayBuffer()); assert.equal(bytes.length, 104363);
     assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), '9a4f103811b828171d7279495fa2260898da40888db222d56dd3b663a3939cbc');
     const originalPhotos = {
-      'matt-banto-about.jpg': '5a55b9b3e203a9d97037202412f8d23bc625a19b668b3022e55723b76b06a377',
-      'matt-banto-outside-e.jpg': '6ecf6d5bb6c6507abf47a4d2f092140132c66552a73cd07ce66d99d1c40a69ab',
-      'matt-banto-outside-i.jpg': '7151eda344566747a358ed449f88897b8efadfba60f8814fcf95bef3b68f7d2d',
+      'matt-banto-portrait-560.webp': '519e37953477a69eefe538ebbed5b8826d37a14f949e031acecb1ad99fa4bc2d',
     };
     for (const [name, expected] of Object.entries(originalPhotos)) {
       const photo = await fetch(origin + prefix + '/images/' + name);

@@ -1,7 +1,7 @@
 export const profile = {
   name: "John Matthew Banto",
   shortName: "Matt Banto",
-  portrait: "/images/matt-banto-about.jpg",
+  portrait: "/images/matt-banto-portrait-560.webp",
   email: "johnmatthewbanto333@gmail.com",
   github: "https://github.com/MattU27",
   linkedin: "https://www.linkedin.com/in/john-matthew-banto-593008392/",

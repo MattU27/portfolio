@@ -62,9 +62,8 @@ export default function Home() {
         <div className="paper-band">
           <section id="about" className="shell section" aria-labelledby="about-title">
             <div className="profile-spread">
-              <figure className="profile-portrait"><Image src={assetPath(profile.portrait)} alt="John Matthew Banto wearing a black jacket" width={2871} height={2940} sizes="(max-width: 700px) calc(100vw - 40px), 360px" unoptimized /><figcaption>{profile.name}</figcaption></figure>
+              <figure className="profile-portrait"><Image src={assetPath(profile.portrait)} alt="John Matthew Banto in his graduation attire" width={560} height={811} sizes="(max-width: 700px) 240px, 320px" unoptimized /><figcaption>{profile.name}</figcaption></figure>
               <div className="profile-story"><p className="eyebrow">About</p><h2 id="about-title">Curious about<br /><em>what’s underneath.</em></h2><div className="about-copy"><p>I like understanding how information moves and where software can make a task clearer. I’m looking to grow those skills in a guided engineering team.</p></div>
-                <div className="personal-pair" role="group" aria-label="Personal photos"><Image src={assetPath("/images/matt-banto-outside-e.jpg")} alt="John Matthew Banto standing beside a stone building" width={1620} height={2160} sizes="(max-width: 700px) calc((100vw - 56px) / 2), 220px" unoptimized /><Image src={assetPath("/images/matt-banto-outside-i.jpg")} alt="John Matthew Banto in a white shirt beside palm trees" width={2448} height={3199} sizes="(max-width: 700px) calc((100vw - 56px) / 2), 220px" unoptimized /></div>
               </div>
             </div>
             <div className="toolkit-spread"><h3>Toolkit</h3><div className="skills-grid">{skills.map((skill, index) => <div className="skill" key={skill.title}><span className="skill-index" aria-hidden="true">0{index + 1}</span><div><h4>{skill.title}</h4><p className="skill-tools">{skill.items}</p></div></div>)}</div></div>
