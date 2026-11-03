@@ -69,12 +69,6 @@ export const skills = [
     items: "Flutter, Dart, Firebase",
     description: "Used in projects alongside my web development work.",
   },
-  {
-    title: "Design & development tools",
-    items: "Codex / ChatGPT",
-    description:
-      "AI-assisted development with Codex/ChatGPT.",
-  },
 ];
 
 
