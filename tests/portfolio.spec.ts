@@ -2,6 +2,20 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { createHash } from 'node:crypto';
 const widths = [[320,568],[360,800],[390,844],[768,1024],[1024,768],[1440,900]];
+test('selected personal photos retain full framing and original main bytes', async ({page,request}) => {
+  await page.goto('./');
+  const portrait = page.locator('#about .profile-portrait img');
+  await portrait.scrollIntoViewIfNeeded();
+  await expect(portrait).toHaveAttribute('width','2871');
+  await expect(portrait).toHaveAttribute('height','2940');
+  const bytes = await (await request.get(new URL((await portrait.getAttribute('src'))!,page.url()).href)).body();
+  expect(createHash('sha256').update(bytes).digest('hex')).toBe('5a55b9b3e203a9d97037202412f8d23bc625a19b668b3022e55723b76b06a377');
+  await expect(page.locator('.personal-pair img')).toHaveCount(2);
+  for (const img of await page.locator('#about img').all()) {
+    await expect(img).toHaveAttribute('loading','lazy');
+    expect(await img.evaluate(e=>getComputedStyle(e).filter)).toBe('none');
+  }
+});
 for (const [width, height] of [[1024,768],[1440,900]]) test(`editorial opening exposes real work ${width}`, async ({ page }) => {
   await page.setViewportSize({width,height});
   await page.goto('./');
@@ -70,3 +84,4 @@ test('no-JS useful content and direct video fallback',async({browser,baseURL})=>
   await expect(page.locator('h1')).toBeVisible();await expect(page.locator('a[href^="mailto:"]')).toBeVisible();
   await expect(page.locator('a[href$="full-walkthrough.mp4"]').first()).toBeVisible();await context.close();
 });
+
